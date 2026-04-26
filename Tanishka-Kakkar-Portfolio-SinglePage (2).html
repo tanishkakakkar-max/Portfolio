@@ -1,0 +1,2030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanishka Kakkar — Marketing Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500&family=Italiana&display=swap" rel="stylesheet">
+<style>
+/* =========================================
+   TANISHKA KAKKAR PORTFOLIO
+   Soft Feminine · OLVAE-Adjacent
+   ========================================= */
+
+:root {
+  --tulip-rose: #d4a5a5;
+  --tulip-rose-deep: #b8807f;
+  --garden-sage: #9daf94;
+  --garden-sage-deep: #6b7d65;
+  --warm-sun: #e8d4a0;
+  --soft-violet: #b8a5c4;
+  --petal-coral: #e8b5a5;
+  --cream: #faf6f0;
+  --cream-deep: #f2ebdd;
+  --paper: #fdfaf5;
+  --ink: #3a3026;
+  --ink-soft: #6b5d4f;
+  --ink-muted: #9b8c7c;
+  --line: #e8ddc8;
+  --rose-line: #e5cfc9;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.main-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  padding: 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(253, 250, 245, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 100;
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-brand {
+  font-family: 'Italiana', serif;
+  font-size: 22px;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.nav-links a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: color 0.3s;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  width: 0;
+  height: 1px;
+  background: var(--tulip-rose-deep);
+  transition: all 0.3s;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--tulip-rose-deep);
+}
+
+.nav-links a.active::after { width: 100%; }
+
+/* =========================================
+   HOME HERO
+   ========================================= */
+
+.home-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 140px 48px 80px;
+  position: relative;
+  background: linear-gradient(180deg, var(--cream) 0%, var(--paper) 100%);
+  overflow: hidden;
+}
+
+/* Decorative petals */
+.petal {
+  position: absolute;
+  border-radius: 50% 0 50% 50%;
+  opacity: 0.4;
+  filter: blur(40px);
+  z-index: 0;
+}
+
+.petal-1 {
+  width: 400px; height: 400px;
+  background: var(--tulip-rose);
+  top: -100px; left: -150px;
+  animation: float 12s ease-in-out infinite;
+}
+
+.petal-2 {
+  width: 500px; height: 500px;
+  background: var(--petal-coral);
+  bottom: -200px; right: -200px;
+  animation: float 15s ease-in-out infinite reverse;
+}
+
+.petal-3 {
+  width: 300px; height: 300px;
+  background: var(--warm-sun);
+  top: 40%; right: 15%;
+  opacity: 0.25;
+  animation: float 18s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -20px) scale(1.05); }
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  animation: fadeUp 1.2s ease both;
+}
+
+.hero-eyebrow {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--tulip-rose-deep);
+  margin-bottom: 32px;
+  animation: fadeUp 1s 0.1s ease both;
+}
+
+.hero-name {
+  font-family: 'Italiana', serif;
+  font-weight: 400;
+  font-size: clamp(64px, 11vw, 160px);
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  margin-bottom: 32px;
+  animation: fadeUp 1.2s 0.2s ease both;
+}
+
+.hero-name .first,
+.hero-name .last {
+  display: block;
+}
+
+.hero-name .last {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--tulip-rose-deep);
+}
+
+.hero-divider {
+  width: 80px;
+  height: 1px;
+  background: var(--tulip-rose-deep);
+  margin: 0 auto 32px;
+  animation: expandLine 1s 0.5s ease both;
+}
+
+@keyframes expandLine {
+  from { width: 0; opacity: 0; }
+  to { width: 80px; opacity: 1; }
+}
+
+.hero-major {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--ink-soft);
+  margin-bottom: 28px;
+  line-height: 1.5;
+  animation: fadeUp 1s 0.6s ease both;
+}
+
+.hero-major .school {
+  font-style: italic;
+  color: var(--garden-sage-deep);
+}
+
+.hero-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--ink);
+  max-width: 640px;
+  margin: 0 auto 48px;
+  line-height: 1.5;
+  animation: fadeUp 1s 0.7s ease both;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeUp 1s 0.9s ease both;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 16px 36px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--tulip-rose-deep);
+  color: var(--paper);
+  border: 1px solid var(--tulip-rose-deep);
+}
+
+.btn-primary:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  letter-spacing: 0.25em;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+}
+
+.btn-secondary:hover {
+  background: var(--ink);
+  color: var(--paper);
+  letter-spacing: 0.25em;
+}
+
+.btn-large { padding: 20px 48px; font-size: 13px; }
+
+.hero-scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--ink-muted);
+  z-index: 2;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--tulip-rose-deep), transparent);
+  margin: 12px auto 0;
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* =========================================
+   HOME INTRO
+   ========================================= */
+
+.home-intro {
+  padding: 140px 0;
+  background: var(--paper);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.intro-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--tulip-rose-deep);
+  padding-top: 12px;
+  position: relative;
+}
+
+.intro-label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 1px;
+  background: var(--tulip-rose-deep);
+}
+
+.intro-lede {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 32px;
+}
+
+.intro-lede em {
+  font-style: italic;
+  color: var(--tulip-rose-deep);
+}
+
+.intro-body p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin-bottom: 24px;
+}
+
+.intro-signature {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--tulip-rose-deep);
+  margin-top: 32px;
+}
+
+/* =========================================
+   HOME HIGHLIGHTS
+   ========================================= */
+
+.home-highlights {
+  padding: 120px 0;
+  background: var(--cream);
+  position: relative;
+}
+
+.highlight-header {
+  margin-bottom: 80px;
+  max-width: 700px;
+}
+
+.section-eyebrow {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--tulip-rose-deep);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.section-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background: var(--tulip-rose-deep);
+  vertical-align: middle;
+  margin-right: 14px;
+}
+
+.highlight-header h2 {
+  font-family: 'Italiana', serif;
+  font-weight: 400;
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+
+.highlight-header h2 em {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--tulip-rose-deep);
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--rose-line);
+  border: 1px solid var(--rose-line);
+}
+
+.highlight {
+  background: var(--cream);
+  padding: 48px;
+  transition: background 0.4s;
+}
+
+.highlight:hover { background: var(--paper); }
+
+.highlight-num {
+  font-family: 'Italiana', serif;
+  font-size: 24px;
+  color: var(--tulip-rose-deep);
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.highlight h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+.highlight p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+/* =========================================
+   INNER PAGE HEADER
+   ========================================= */
+
+.page-inner main { padding-top: 120px; }
+
+.page-header {
+  padding: 80px 0 60px;
+  background: linear-gradient(180deg, var(--cream) 0%, var(--paper) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 400px; height: 400px;
+  background: var(--tulip-rose);
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.25;
+  z-index: 0;
+}
+
+.page-header .container { position: relative; z-index: 1; }
+
+.page-title {
+  font-family: 'Italiana', serif;
+  font-weight: 400;
+  font-size: clamp(48px, 8vw, 96px);
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  margin-bottom: 32px;
+}
+
+.page-title em {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--tulip-rose-deep);
+}
+
+.page-intro {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--ink-soft);
+  max-width: 720px;
+  font-style: italic;
+}
+
+/* =========================================
+   WORK PAGE - CASE STUDIES
+   ========================================= */
+
+.case-featured {
+  padding: 80px 0;
+  background: var(--paper);
+}
+
+.case-tag-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.case-tag {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--garden-sage-deep);
+}
+
+.case-tag-sep {
+  color: var(--tulip-rose-deep);
+  font-size: 14px;
+}
+
+.case-title {
+  font-family: 'Italiana', serif;
+  font-weight: 400;
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  margin-bottom: 60px;
+}
+
+.case-title em {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--tulip-rose-deep);
+  display: block;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.video-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--tulip-rose-deep);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--rose-line);
+}
+
+.instagram-embed {
+  background: var(--cream);
+  padding: 20px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.instagram-embed .instagram-media {
+  margin: 0 !important;
+}
+
+.video-caption {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--ink-muted);
+  margin-top: 16px;
+  text-align: center;
+}
+
+.case-section {
+  margin-bottom: 36px;
+}
+
+.case-section h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--tulip-rose-deep);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rose-line);
+}
+
+.case-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+}
+
+.metrics-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.metric {
+  padding: 20px 0;
+  border-top: 1px solid var(--rose-line);
+}
+
+.metric-value {
+  font-family: 'Italiana', serif;
+  font-size: 42px;
+  color: var(--tulip-rose-deep);
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.metric-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--ink-muted);
+  margin-top: 8px;
+}
+
+/* Case blocks (non-featured) */
+.case-block {
+  padding: 80px 0;
+  background: var(--paper);
+}
+
+.case-block.academic {
+  background: var(--cream);
+}
+
+.case-divider {
+  width: 60px;
+  height: 1px;
+  background: var(--tulip-rose-deep);
+  margin-bottom: 40px;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.case-lede {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  line-height: 1.4;
+  font-style: italic;
+  color: var(--ink);
+  position: sticky;
+  top: 120px;
+}
+
+/* Academic cards */
+.academic-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.academic-card {
+  background: var(--paper);
+  padding: 48px;
+  border: 1px solid var(--rose-line);
+}
+
+.academic-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--garden-sage-deep);
+  margin-bottom: 20px;
+}
+
+.academic-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.academic-card p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+}
+
+/* =========================================
+   PERSONAL PAGE
+   ========================================= */
+
+.personal-video {
+  padding: 80px 0;
+}
+
+.personal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.personal-context h2 {
+  font-family: 'Italiana', serif;
+  font-weight: 400;
+  font-size: clamp(32px, 4.5vw, 52px);
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 32px;
+}
+
+.personal-context h2 em {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--tulip-rose-deep);
+}
+
+.personal-context p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin-bottom: 20px;
+}
+
+.pull-quote {
+  margin-top: 40px;
+  padding: 32px 40px;
+  background: var(--cream);
+  border-left: 2px solid var(--tulip-rose-deep);
+  position: relative;
+}
+
+.quote-mark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 80px;
+  color: var(--tulip-rose-deep);
+  line-height: 0.5;
+  margin-bottom: 0;
+  position: absolute;
+  top: 40px; left: 20px;
+  opacity: 0.3;
+}
+
+.pull-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.4;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.personal-skills {
+  padding: 100px 0;
+  background: var(--cream);
+}
+
+.personal-skills h2 {
+  font-family: 'Italiana', serif;
+  font-weight: 400;
+  font-size: clamp(32px, 4.5vw, 52px);
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 60px;
+}
+
+.personal-skills h2 em {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--tulip-rose-deep);
+}
+
+.toolkit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.toolkit-item {
+  padding-top: 20px;
+  border-top: 1px solid var(--rose-line);
+}
+
+.toolkit-item h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--tulip-rose-deep);
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.toolkit-item p {
+  font-size: 15px;
+  color: var(--ink-soft);
+  line-height: 1.8;
+}
+
+/* =========================================
+   WRITING PAGE
+   ========================================= */
+
+.writing-featured {
+  padding: 80px 0;
+  background: var(--paper);
+}
+
+.writing-card {
+  padding: 60px;
+  background: var(--cream);
+  border: 1px solid var(--rose-line);
+  position: relative;
+  overflow: hidden;
+}
+
+.writing-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--tulip-rose-deep), var(--petal-coral), var(--warm-sun));
+}
+
+.writing-meta {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--garden-sage-deep);
+  flex-wrap: wrap;
+}
+
+.writing-sep { color: var(--tulip-rose-deep); }
+
+.writing-title {
+  font-family: 'Italiana', serif;
+  font-weight: 400;
+  font-size: clamp(32px, 4.5vw, 52px);
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+
+.writing-title em {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--tulip-rose-deep);
+  display: block;
+}
+
+.writing-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.writing-excerpt {
+  padding: 32px 0;
+  border-top: 1px solid var(--rose-line);
+  border-bottom: 1px solid var(--rose-line);
+  margin-bottom: 32px;
+}
+
+.writing-excerpt p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--ink-soft);
+}
+
+.writing-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.writing-sources {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  font-style: italic;
+  color: var(--ink-muted);
+}
+
+.writing-link {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--tulip-rose-deep);
+  text-decoration: none;
+  border-bottom: 1px solid var(--tulip-rose-deep);
+  padding-bottom: 6px;
+  transition: all 0.3s;
+}
+
+.writing-link:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+  letter-spacing: 0.25em;
+}
+
+.writing-list {
+  padding: 100px 0;
+  background: var(--cream);
+}
+
+.writing-list h2 {
+  font-family: 'Italiana', serif;
+  font-weight: 400;
+  font-size: clamp(32px, 4.5vw, 52px);
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 60px;
+}
+
+.writing-list h2 em {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--tulip-rose-deep);
+}
+
+.upcoming-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.upcoming-card {
+  padding: 40px;
+  background: var(--paper);
+  border: 1px solid var(--rose-line);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.upcoming-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(184, 128, 127, 0.1);
+}
+
+.upcoming-status {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--garden-sage-deep);
+  margin-bottom: 16px;
+}
+
+.upcoming-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.upcoming-card h3 em {
+  font-style: italic;
+  color: var(--tulip-rose-deep);
+}
+
+.upcoming-card p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+
+.substack-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* =========================================
+   CONTACT PAGE
+   ========================================= */
+
+.contact-main {
+  padding: 80px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.contact-item {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--rose-line);
+}
+
+.contact-item:first-of-type { padding-top: 32px; }
+
+.contact-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+
+.contact-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a.contact-value:hover { color: var(--tulip-rose-deep); }
+
+.credentials {
+  padding: 100px 0;
+  background: var(--cream);
+}
+
+.credentials h2, .skills-section h2 {
+  font-family: 'Italiana', serif;
+  font-weight: 400;
+  font-size: clamp(32px, 4.5vw, 52px);
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 60px;
+}
+
+.credentials h2 em, .skills-section h2 em {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--tulip-rose-deep);
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.credentials-col h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--tulip-rose-deep);
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.cred-item {
+  padding: 24px 0;
+  border-top: 1px solid var(--rose-line);
+}
+
+.cred-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.cred-sub {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-bottom: 4px;
+}
+
+.cred-meta {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+
+.cred-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.skills-section {
+  padding: 100px 0;
+  background: var(--paper);
+}
+
+.skills-grid-contact {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.skill-group h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--tulip-rose-deep);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--rose-line);
+  font-style: italic;
+}
+
+.skill-group ul {
+  list-style: none;
+}
+
+.skill-group li {
+  font-size: 15px;
+  color: var(--ink);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.skill-group li:last-child { border-bottom: none; }
+
+.final-cta {
+  padding: 120px 0;
+  background: linear-gradient(180deg, var(--cream) 0%, var(--paper) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta::before {
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: var(--tulip-rose);
+  border-radius: 50%;
+  filter: blur(150px);
+  opacity: 0.2;
+}
+
+.cta-inner {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-title {
+  font-family: 'Italiana', serif;
+  font-weight: 400;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 48px;
+}
+
+.cta-title em {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--tulip-rose-deep);
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.site-footer {
+  padding: 60px 0 40px;
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footer-brand {
+  font-family: 'Italiana', serif;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: var(--cream);
+}
+
+.footer-links {
+  display: flex;
+  gap: 32px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.footer-links a {
+  color: var(--cream);
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.footer-links a:hover { opacity: 1; }
+
+.footer-copy {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--cream);
+  opacity: 0.6;
+}
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 960px) {
+  .container { padding: 0 28px; }
+  .main-nav { padding: 16px 24px; }
+
+  .nav-links {
+    gap: 20px;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+  }
+
+  .nav-brand { font-size: 18px; }
+
+  .home-hero { padding: 120px 24px 60px; }
+
+  .intro-grid,
+  .credentials-grid,
+  .contact-grid,
+  .personal-grid,
+  .featured-grid,
+  .case-grid,
+  .academic-grid,
+  .upcoming-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .case-lede { position: static; }
+
+  .highlight-grid,
+  .toolkit-grid,
+  .skills-grid-contact {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .highlight { padding: 32px 24px; }
+  .writing-card, .academic-card, .upcoming-card { padding: 32px 24px; }
+
+  .home-intro, .home-highlights, .credentials, .skills-section,
+  .writing-featured, .writing-list, .case-featured, .case-block,
+  .personal-video, .personal-skills, .contact-main {
+    padding: 60px 0;
+  }
+
+  .footer-inner { justify-content: center; text-align: center; flex-direction: column; }
+
+  .writing-footer { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 600px) {
+  .nav-links { display: none; }
+  .hero-cta { flex-direction: column; align-items: stretch; }
+  .btn-primary, .btn-secondary { text-align: center; }
+
+  .highlight-grid,
+  .toolkit-grid,
+  .skills-grid-contact {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics-row { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .metric-value { font-size: 32px; }
+
+  .pull-quote { padding: 24px 24px 24px 40px; }
+  .pull-quote p { font-size: 18px; padding-left: 0; }
+}
+
+/* Adjustments for Cormorant in uppercase contexts - improves readability when serif is used for small caps labels */
+.section-eyebrow,
+.nav-links,
+.hero-eyebrow,
+.case-tag,
+.video-label,
+.case-section h4,
+.metric-label,
+.academic-label,
+.writing-meta,
+.upcoming-status,
+.contact-label,
+.cred-meta,
+.footer-links,
+.btn-primary,
+.btn-secondary,
+.writing-link {
+  font-weight: 500;
+}
+
+/* Body text reads slightly larger in serif */
+body {
+  font-size: 17px;
+  letter-spacing: 0.005em;
+}
+
+
+/* Single-page specific: smooth scroll offset for fixed nav */
+html { scroll-padding-top: 80px; }
+
+/* Section anchors */
+.section-anchor {
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+/* Active nav state via scroll */
+.nav-links a.active {
+  color: var(--tulip-rose-deep);
+}
+.nav-links a.active::after {
+  width: 100%;
+}
+</style>
+</head>
+
+<body class="page-home">
+
+<nav class="main-nav">
+  <a href="#home" class="nav-brand">Tanishka Kakkar</a>
+  <div class="nav-links">
+    <a href="#home" class="active">Home</a>
+    <a href="#work">Work</a>
+    <a href="#personal">Personal</a>
+    <a href="#writing">Writing</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HOME -->
+<span id="home" class="section-anchor"></span>
+<main class="home-hero">
+  <div class="petal petal-1"></div>
+  <div class="petal petal-2"></div>
+  <div class="petal petal-3"></div>
+
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Portfolio · 2026</div>
+    <h1 class="hero-name">
+      <span class="first">Tanishka</span>
+      <span class="last">Kakkar</span>
+    </h1>
+    <div class="hero-divider"></div>
+    <p class="hero-major">
+      B.B.A. Marketing · Minor in Computer Science<br>
+      <span class="school">San José State University</span>
+    </p>
+    <p class="hero-tagline">
+      A marketer who believes that the most effective campaigns begin with something worth believing in.
+    </p>
+    <div class="hero-cta">
+      <a href="#work" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</main>
+
+<section class="home-intro">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-label">A Note on Philosophy</div>
+      <div class="intro-body">
+        <p class="intro-lede">
+          I am a firm believer in <em>intentional marketing</em> - the practice of promoting only what one genuinely stands behind.
+        </p>
+        <p>
+          Authenticity cannot be manufactured. Audiences sense it, and so do the brands that last. My work - across social strategy, market research, and content - is grounded in this principle: represent what you believe in, and the message will carry itself.
+        </p>
+        <div class="intro-signature">- T.K.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-highlights">
+  <div class="container">
+    <div class="highlight-header">
+      <div class="section-eyebrow">Areas of Focus</div>
+      <h2>Where I'm building <em>expertise.</em></h2>
+    </div>
+    <div class="highlight-grid">
+      <div class="highlight">
+        <div class="highlight-num">01</div>
+        <h3>Brand Strategy</h3>
+        <p>Translating research and positioning into narratives that resonate with a clearly defined audience.</p>
+      </div>
+      <div class="highlight">
+        <div class="highlight-num">02</div>
+        <h3>Market Research</h3>
+        <p>Competitive analysis, consumer insight, and financial modeling to inform go-to-market decisions.</p>
+      </div>
+      <div class="highlight">
+        <div class="highlight-num">03</div>
+        <h3>Content & Social</h3>
+        <p>Concepting, producing, and analyzing cross-platform content built for reach and resonance.</p>
+      </div>
+      <div class="highlight">
+        <div class="highlight-num">04</div>
+        <h3>International Marketing</h3>
+        <p>Localization strategy, cultural research, and market entry frameworks for global brands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<span id="work" class="section-anchor"></span>
+<section class="page-header">
+  <div class="container">
+    <div class="section-eyebrow">Professional Portfolio</div>
+    <h1 class="page-title">Selected <em>work.</em></h1>
+    <p class="page-intro">
+      A record of the brands, organizations, and projects I have contributed to - each selected because the work aligned with values I could genuinely stand behind.
+    </p>
+  </div>
+</section>
+
+<!-- SWE FEATURED -->
+<section class="case-featured">
+  <div class="container">
+    <div class="case-tag-row">
+      <span class="case-tag">Aug 2025 - Present</span>
+      <span class="case-tag-sep">·</span>
+      <span class="case-tag">Public Relations Chair</span>
+    </div>
+    <h2 class="case-title">Society of Women Engineers<br><em>San José State Chapter</em></h2>
+
+    <div class="featured-grid">
+      <div class="featured-video">
+        <div class="video-label">Chapter Recap · Reel</div>
+        <div class="instagram-embed">
+          <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DSqFLbRkppl/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+            <a href="https://www.instagram.com/reel/DSqFLbRkppl/" target="_blank" style="background:#FFFFFF; line-height:0; padding:0; text-align:center; text-decoration:none; width:100%;">View this post on Instagram</a>
+          </blockquote>
+        </div>
+        <p class="video-caption">Conceptualized, shot, and edited in-house - part of a 50+ piece content series.</p>
+      </div>
+
+      <div class="featured-body">
+        <div class="case-section">
+          <h4>Role</h4>
+          <p>As Public Relations Chair, I lead the chapter's social media strategy across Instagram and LinkedIn, overseeing all content ideation, production, and performance analysis.</p>
+        </div>
+
+        <div class="case-section">
+          <h4>Approach</h4>
+          <p>I developed a content strategy built around three formats - Reels for reach, event recaps for community presence, and Stories for engagement frequency. Performance data from Meta Business Suite informed weekly creative direction, ensuring each iteration improved upon the last.</p>
+        </div>
+
+        <div class="case-section">
+          <h4>Impact</h4>
+          <div class="metrics-row">
+            <div class="metric">
+              <div class="metric-value">155K+</div>
+              <div class="metric-label">Monthly Views</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">1.7K</div>
+              <div class="metric-label">Interactions</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">+40%</div>
+              <div class="metric-label">Campus Engagement</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">+25%</div>
+              <div class="metric-label">Avg. Post Performance</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-section">
+          <h4>Deliverables</h4>
+          <p>50+ content pieces produced in the first month alone, including Reels, event recaps, and branded Story sequences. Established a cohesive visual identity system in Canva that standardized the chapter's presence across platforms.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTIVE UPLIFT -->
+<section class="case-block">
+  <div class="container">
+    <div class="case-divider"></div>
+    <div class="case-tag-row">
+      <span class="case-tag">Feb 2025 - Present</span>
+      <span class="case-tag-sep">·</span>
+      <span class="case-tag">Marketing & Market Research Intern</span>
+    </div>
+    <h2 class="case-title">Collective Uplift<br><em>Sports Representation Agency</em></h2>
+
+    <div class="case-grid">
+      <div class="case-col-left">
+        <p class="case-lede">
+          A faith-driven sports agency specializing in brand consulting and career development for athletes.
+        </p>
+      </div>
+      <div class="case-col-right">
+        <div class="case-section">
+          <h4>Scope of Work</h4>
+          <p>I develop and execute cross-platform content strategies across Instagram, TikTok, and LinkedIn to amplify athlete stories - with particular emphasis on narrative voice over promotional messaging.</p>
+        </div>
+        <div class="case-section">
+          <h4>Research</h4>
+          <p>I conduct ongoing competitive analysis of athlete representation agencies and broader industry trends in sports marketing, translating findings into strategic positioning recommendations for agency leadership.</p>
+        </div>
+        <div class="case-section">
+          <h4>Client-Facing Deliverables</h4>
+          <p>I design digital outreach campaigns targeting athletes, corporate partners, and prospective sponsors. My work includes brand identity assets and pitch decks that directly support client acquisition and agency growth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DHRUVISHA HVAC -->
+<section class="case-block">
+  <div class="container">
+    <div class="case-divider"></div>
+    <div class="case-tag-row">
+      <span class="case-tag">Jun - Aug 2024</span>
+      <span class="case-tag-sep">·</span>
+      <span class="case-tag">Marketing Intern · Remote</span>
+    </div>
+    <h2 class="case-title">Dhruvisha HVAC Systems<br><em>Industrial B2B</em></h2>
+
+    <div class="case-grid">
+      <div class="case-col-left">
+        <p class="case-lede">
+          A competitive industrial HVAC market requiring differentiated outreach to B2B decision-makers.
+        </p>
+      </div>
+      <div class="case-col-right">
+        <div class="case-section">
+          <h4>Campaign Design</h4>
+          <p>I designed and launched targeted email and social media campaigns reaching over 10,000 potential B2B clients, generating qualified leads and expanding brand awareness within a crowded industrial sector.</p>
+        </div>
+        <div class="case-section">
+          <h4>Testing & Optimization</h4>
+          <p>Through structured A/B testing on subject lines, creative angles, and calls-to-action, I drove a 22% improvement in engagement rates. Weekly performance reporting informed ongoing ad optimization.</p>
+        </div>
+        <div class="case-section">
+          <h4>Results</h4>
+          <div class="metrics-row">
+            <div class="metric">
+              <div class="metric-value">10K+</div>
+              <div class="metric-label">B2B Clients Reached</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">+22%</div>
+              <div class="metric-label">Engagement Rate</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">+18%</div>
+              <div class="metric-label">Click-Through Rate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACADEMIC PROJECTS -->
+<section class="case-block academic">
+  <div class="container">
+    <div class="case-divider"></div>
+    <div class="case-tag-row">
+      <span class="case-tag">Spring 2026</span>
+      <span class="case-tag-sep">·</span>
+      <span class="case-tag">Academic Case Studies</span>
+    </div>
+    <h2 class="case-title">Applied coursework<br><em>in market analysis.</em></h2>
+
+    <div class="academic-grid">
+      <div class="academic-card">
+        <div class="academic-label">Principles of Marketing</div>
+        <h3>Hero Cosmetics - Mighty Patch Global Strategy</h3>
+        <p>Conducted SWOT analysis and global market sizing for Hero Cosmetics' flagship product within a projected $1.26 billion acne-care market. Benchmarked against COSRX and Nexcare across Amazon, Target, and Ulta distribution channels.</p>
+        <p>Assessed the financial and strategic impact of 2026 Section 122 import tariffs on sales projections and presented expansion recommendations to the class as part of a four-person research team.</p>
+      </div>
+
+      <div class="academic-card">
+        <div class="academic-label">Global Dimensions of Business</div>
+        <h3>Cava - Japan Market Entry Strategy</h3>
+        <p>Developed a comprehensive international market entry strategy for Cava, an organic Mediterranean fast-casual brand, targeting health-conscious Japanese consumers within a $1B+ category.</p>
+        <p>Delivered consumer research, competitive analysis, financial projections, and a CSR evaluation on sustainability positioning. Evaluated localization versus global standardization frameworks to recommend an optimal organizational structure for market entry.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONAL -->
+<span id="personal" class="section-anchor"></span>
+<section class="page-header">
+  <div class="container">
+    <div class="section-eyebrow">Personal Content</div>
+    <h1 class="page-title">Off the <em>clock.</em></h1>
+    <p class="page-intro">
+      A look at the kind of content I make for myself - lifestyle, travel, and trend-driven Reels filmed and edited entirely on my own. Personal content is where I stay fluent in the platforms my future work will live on.
+    </p>
+  </div>
+</section>
+
+<section class="personal-video">
+  <div class="container">
+    <div class="personal-grid">
+      <div class="personal-context">
+        <div class="section-eyebrow">Personal · LA Travel Reel</div>
+        <h2>Catching the trend,<br>shot across <em>Los Angeles.</em></h2>
+        <p>
+          Filmed across multiple locations in LA - each lyric of Miley Cyrus's "Party in the U.S.A." matched to a new backdrop, lip-synced and cut on the beat. The kind of Reel that requires you to plan the route, scout the shots, and edit with rhythm in mind.
+        </p>
+        <p>
+          What this content represents for marketing: trend literacy, location-aware production, and the ability to tell a complete visual story in under 30 seconds. The same instincts I bring to every brand campaign I work on.
+        </p>
+      </div>
+
+      <div class="personal-embed">
+        <div class="video-label">Personal · Travel Reel</div>
+        <div class="instagram-embed">
+          <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DIsZF3zxfe7/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+            <a href="https://www.instagram.com/reel/DIsZF3zxfe7/" target="_blank" style="background:#FFFFFF; line-height:0; padding:0; text-align:center; text-decoration:none; width:100%;">View this post on Instagram</a>
+          </blockquote>
+        </div>
+        <p class="video-caption">Filmed, edited, and published by me.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="personal-skills">
+  <div class="container">
+    <div class="section-eyebrow">Creative Toolkit</div>
+    <h2>Tools of the <em>trade.</em></h2>
+    <div class="toolkit-grid">
+      <div class="toolkit-item">
+        <h4>Editing</h4>
+        <p>Final Cut Pro · CapCut · Adobe Photoshop</p>
+      </div>
+      <div class="toolkit-item">
+        <h4>Design</h4>
+        <p>Canva · Figma · Brand systems</p>
+      </div>
+      <div class="toolkit-item">
+        <h4>Analytics</h4>
+        <p>Meta Business Suite · Google Analytics · Tableau</p>
+      </div>
+      <div class="toolkit-item">
+        <h4>Publishing</h4>
+        <p>Instagram · TikTok · LinkedIn · Substack</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WRITING -->
+<span id="writing" class="section-anchor"></span>
+<section class="page-header">
+  <div class="container">
+    <div class="section-eyebrow">Longform Writing</div>
+    <h1 class="page-title">Words, on the <em>subjects I care about.</em></h1>
+    <p class="page-intro">
+      Research-driven essays on consumer health, sustainability, and the gap between what brands claim and what they deliver. My writing is an extension of my marketing philosophy - the belief that clarity is the highest form of respect you can offer a reader.
+    </p>
+  </div>
+</section>
+
+<section class="writing-featured">
+  <div class="container">
+    <div class="writing-card featured">
+      <div class="writing-meta">
+        <span class="writing-date">Apr 15, 2026</span>
+        <span class="writing-sep">·</span>
+        <span class="writing-cat">Sustainability · Consumer Health</span>
+      </div>
+      <h2 class="writing-title">Is Non-Toxic Clothing Just Another Trend<br><em>or an Actual Issue?</em></h2>
+      <p class="writing-sub">We obsess over what we eat to fuel our runs. Why aren't we reading the labels on what we wear?</p>
+
+      <div class="writing-excerpt">
+        <p>An investigation into the chemistry of synthetic activewear - citing peer-reviewed research on endocrine disruption, microplastic shedding, and the documented gap between greenwashing claims and third-party certification standards. The piece argues that the solution is not dismissal of the clean-fashion movement but more rigorous consumer literacy.</p>
+      </div>
+
+      <div class="writing-footer">
+        <div class="writing-sources">
+          Referenced research: Connelly (2024) · Munarriz (2025) · Nayak (2025) · Nivrén (2021)
+        </div>
+        <a href="https://open.substack.com/pub/tani05/p/is-non-toxic-clothing-just-another" target="_blank" class="writing-link">Read full essay on Substack →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="writing-list">
+  <div class="container">
+    <div class="writing-card featured" style="margin-bottom: 60px;">
+      <div class="writing-meta">
+        <span class="writing-date">Apr 26, 2026</span>
+        <span class="writing-sep">·</span>
+        <span class="writing-cat">Health · Nutrition Science</span>
+      </div>
+      <h2 class="writing-title">The Gut-Brain Connection<br><em>Your Mental Health Starts With What You Eat.</em></h2>
+      <p class="writing-sub">Every function in your body is connected to your gut. Your mental health is no exception.</p>
+
+      <div class="writing-excerpt">
+        <p>A research-grounded essay on the gut-brain axis, the vagus nerve, and how the microbiome influences mood, cognition, and immune function. Combines peer-reviewed studies on serotonin production, microbial diversity, and dietary fiber with personal accounts of trial-and-error nutrition. The argument: mental health is shaped just as much by what you eat as by what you think.</p>
+      </div>
+
+      <div class="writing-footer">
+        <div class="writing-sources">
+          Referenced research: gut-immune-brain axis · psychobiotics · American Gut Project · ASD microbiome studies
+        </div>
+        <a href="https://open.substack.com/pub/tani05/p/the-gut-brain-connection" target="_blank" class="writing-link">Read full essay on Substack →</a>
+      </div>
+    </div>
+
+    <div class="section-eyebrow">Additional Writing</div>
+    <h2>More <em>in progress.</em></h2>
+
+    <div class="upcoming-grid">
+      <div class="upcoming-card">
+        <div class="upcoming-status">Academic · Comm 100W</div>
+        <h3>The Meaning of <em>Sustainable</em> in the Age of AI</h3>
+        <p>An argument that public discourse on sustainability has narrowed around immediate resource consumption, losing sight of the Brundtland Commission's original framing: the long-term viability of systems across generations.</p>
+      </div>
+
+      <div class="upcoming-card">
+        <div class="upcoming-status">Academic · Business Ethics</div>
+        <h3>Egoism and the Invisible Hand</h3>
+        <p>A nuanced examination of ethical egoism in business. The position can benefit enterprise and accidentally benefit society, but lacks the structural protections required to hold up over the long term.</p>
+      </div>
+    </div>
+
+    <div class="substack-cta">
+      <a href="https://tani05.substack.com" target="_blank" class="btn-primary">Subscribe on Substack</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<span id="contact" class="section-anchor"></span>
+<section class="page-header">
+  <div class="container">
+    <div class="section-eyebrow">Let's Connect</div>
+    <h1 class="page-title">Get in <em>touch.</em></h1>
+    <p class="page-intro">
+      Currently seeking summer and fall 2026 internship opportunities in marketing, brand strategy, and content. I would be glad to hear from brands and teams whose work I could represent with conviction.
+    </p>
+  </div>
+</section>
+
+<section class="contact-main">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-col">
+        <div class="section-eyebrow">Direct</div>
+        <div class="contact-item">
+          <div class="contact-label">Email</div>
+          <a href="mailto:tanishka.kakkar05@gmail.com" class="contact-value">tanishka.kakkar05@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <div class="contact-label">Phone</div>
+          <a href="tel:+15105572002" class="contact-value">(510) 557-2002</a>
+        </div>
+        <div class="contact-item">
+          <div class="contact-label">Based in</div>
+          <div class="contact-value">San José, California</div>
+        </div>
+      </div>
+
+      <div class="contact-col">
+        <div class="section-eyebrow">Online</div>
+        <div class="contact-item">
+          <div class="contact-label">LinkedIn</div>
+          <a href="https://linkedin.com/in/tanishka-kakkar-28974827a" target="_blank" class="contact-value">linkedin.com/in/tanishka-kakkar</a>
+        </div>
+        <div class="contact-item">
+          <div class="contact-label">Substack</div>
+          <a href="https://tani05.substack.com" target="_blank" class="contact-value">tani05.substack.com</a>
+        </div>
+        <div class="contact-item">
+          <div class="contact-label">Availability</div>
+          <div class="contact-value">Internships, Summer & Fall 2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="credentials">
+  <div class="container">
+    <div class="section-eyebrow">Background</div>
+    <h2>Education & <em>credentials.</em></h2>
+
+    <div class="credentials-grid">
+      <div class="credentials-col">
+        <h3>Education</h3>
+        <div class="cred-item">
+          <div class="cred-title">San José State University</div>
+          <div class="cred-sub">B.B.A. Marketing · Minor in Computer Science</div>
+          <div class="cred-meta">Dean's Scholar · Expected December 2027</div>
+          <p class="cred-desc">Coursework: Principles of Marketing, Global Dimensions of Business, Financial Accounting, Object-Oriented Design, Data Structures, Big Data.</p>
+        </div>
+      </div>
+
+      <div class="credentials-col">
+        <h3>Certifications</h3>
+        <div class="cred-item">
+          <div class="cred-title">Google Digital Marketing & E-commerce</div>
+          <div class="cred-meta">Google · Sep 2025</div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-title">Introduction to Data Science</div>
+          <div class="cred-meta">IBM · Mar 2025</div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-title">Omnichannel Marketing Job Simulation</div>
+          <div class="cred-meta">Lululemon via Forage · Oct 2024</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="skills-section">
+  <div class="container">
+    <div class="section-eyebrow">Capabilities</div>
+    <h2>A working <em>toolkit.</em></h2>
+
+    <div class="skills-grid-contact">
+      <div class="skill-group">
+        <h4>Marketing</h4>
+        <ul>
+          <li>Google Analytics</li>
+          <li>Meta Business Suite</li>
+          <li>HubSpot CRM</li>
+          <li>Google Ads</li>
+          <li>Mailchimp</li>
+          <li>Hootsuite</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h4>Creative</h4>
+        <ul>
+          <li>Adobe Photoshop</li>
+          <li>Final Cut Pro</li>
+          <li>CapCut</li>
+          <li>Canva</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h4>Technical</h4>
+        <ul>
+          <li>Python</li>
+          <li>Java</li>
+          <li>Tableau</li>
+          <li>Excel</li>
+          <li>Statistical Analysis</li>
+          <li>Data Visualization</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <ul>
+          <li>English · Fluent</li>
+          <li>Hindi · Native</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="cta-inner">
+      <h2 class="cta-title">I look forward to<br><em>hearing from you.</em></h2>
+      <a href="mailto:tanishka.kakkar05@gmail.com" class="btn-primary btn-large">Begin a Conversation</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">Tanishka Kakkar</div>
+      <div class="footer-links">
+        <a href="mailto:tanishka.kakkar05@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/tanishka-kakkar-28974827a" target="_blank">LinkedIn</a>
+        <a href="https://tani05.substack.com" target="_blank">Substack</a>
+      </div>
+      <div class="footer-copy">© 2026 · Designed with intention</div>
+    </div>
+  </div>
+</footer>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
+<script>
+  // Highlight nav based on scroll position
+  const sections = ['home', 'work', 'personal', 'writing', 'contact'];
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  function updateActiveNav() {
+    const scrollPos = window.scrollY + 150;
+    let current = 'home';
+
+    for (const id of sections) {
+      const section = document.getElementById(id);
+      if (section && section.offsetTop <= scrollPos) {
+        current = id;
+      }
+    }
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNav);
+  window.addEventListener('load', updateActiveNav);
+</script>
+
+</body>
+</html>
